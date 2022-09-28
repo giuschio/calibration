@@ -36,6 +36,7 @@ cam.calibrate(input_dir="abs/path/to/images", savepath='abs/path/to/camera_info.
 
 ### Camera-to-camera calibration with checkerboard pattern (using OPENCV)
 Estimate the rotation and translation between two calibrated cameras.   
+A checkerboard pattern can be generated using [https://calib.io/pages/camera-calibration-pattern-generator](https://calib.io/pages/camera-calibration-pattern-generator).   
 script:    
 `src/tools/stereo_checkerboard_calibration.py`    
 commandline usage:    
