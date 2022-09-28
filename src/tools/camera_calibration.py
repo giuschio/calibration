@@ -103,7 +103,7 @@ class Camera:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("input_dir", help="Absolute path to images")
+    parser.add_argument("input_dir", help="Absolute path to folder containing camera images.")
     parser.add_argument("camera_model", help="Distortion model. Either OPENCV or FULL_OPENCV. See COLMAP documentation for more details: https://colmap.github.io/cameras.html")
     parser.add_argument("--working_dir", help="Absolute path to working directory. Used to store colmap workspace in _tmp_calibration. If no path is provided, the current directory will be used.")
     parser.add_argument("--savepath", help="Absolute path where the results should be saved. Must be a .txt file. If no path is provided, the camera info will be just printed in the terminal.")
