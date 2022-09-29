@@ -5,8 +5,8 @@ import typing
 
 from os.path import basename as basename
 
-from camera_calibration import Camera
-from utils import dict_to_yaml, import_images
+from tools.camera_calibration import Camera
+from tools.utils import dict_to_yaml, import_images
 
 
 class CheckerboardPattern:

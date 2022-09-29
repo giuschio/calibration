@@ -17,7 +17,8 @@ script:
 `src/tools/camera_calibration.py`    
 commandline usage:    
 ```bash
-source venv/bin/activate
+# source the venv and set PYTHONPATH to allow imports
+source env.sh
 # basic usage (prints camera info to terminal)
 python3 src/tools/camera_calibration.py abs/path/to/images OPENCV
 # export camera_info to file
@@ -41,7 +42,7 @@ script:
 `src/tools/stereo_checkerboard_calibration.py`    
 commandline usage:    
 ```bash
-source venv/bin/activate
+source env.sh
 # basic usage (prints results to terminal)
 python3 src/tools/stereo_checkerboard_calibration.py abs/path/to/cam_1/images abs/path/to/cam_2/images abs/path/to/cam_1/info.txt abs/path/to/cam_2/info.txt --checkerboard ROWSxCOLUMNSxSQUARE_SIZE
 # export intrinsics of both cameras and cam-to-cam extrinsics to yaml file
