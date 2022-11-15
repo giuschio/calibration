@@ -21,7 +21,7 @@ import shutil
 
 
 class Camera:
-    supported_models = ["OPENCV", "FULL_OPENCV"]
+    supported_models = ["OPENCV", "FULL_OPENCV", "OPENCV_FISHEYE"]
 
     def __init__(self, camera_model="OPENCV") -> None:
         # this code supports the OPENCV (also known as radtan, plum_bob) and FULL_OPENCV
